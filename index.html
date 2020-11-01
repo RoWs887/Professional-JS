@@ -2,18 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet">
-    <title>Shop</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="center">
-    <div class="logo">Beautiful Logo</div>
-    <button class="btn-cart" type="button">Shopping bag</button>
-</header>
-<main class="center">
-    <div class="products"></div>
-</main>
-<script src="main.js"></script>
+<div id="app">
+    <header>
+        <div class="logo">Интернет-магазин</div>
+        <search ref="search"></search>
+        <div class="cart">
+            
+            <cart ref="cart"></cart>
+        </div>
+    </header>
+    <main>
+        <products ref="products"></products>
+    </main>
+</div>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/InputComp.js"></script>
+    <script src="js/CartComp.js"></script>
+    <script src="js/ProducComp.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
